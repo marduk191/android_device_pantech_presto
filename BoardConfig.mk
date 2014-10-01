@@ -116,3 +116,14 @@ BOARD_SUPPRESS_EMMC_WIPE := true
 
 # Wifi
 -include device/pantech/presto/wifi/board-bcm.mk
+#twrp
+TW_DEFAULT_EXTERNAL_STORAGE := true 
+DEVICE_RESOLUTION := 480x800
+RECOVERY_GRAPHICS_USE_LINELENGTH := true
+TW_FLASH_FROM_STORAGE := true 
+TW_INTERNAL_STORAGE_PATH := "/sdcard"
+TW_INTERNAL_STORAGE_MOUNT_POINT := "Internal"
+TW_EXTERNAL_STORAGE_PATH := "/external_sd"
+TW_EXTERNAL_STORAGE_MOUNT_POINT := "External"
+TW_BOARD_CUSTOM_GRAPHICS := ../../../device/pantech/msm8x60-common/recovery/graphics.c
+# TARGET_PREBUILT_RECOVERY_KERNEL := device/pantech/presto/prebuilt/recovery/R1
