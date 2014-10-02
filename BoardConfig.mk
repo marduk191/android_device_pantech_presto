@@ -125,5 +125,5 @@ TW_INTERNAL_STORAGE_PATH := "/sdcard"
 TW_INTERNAL_STORAGE_MOUNT_POINT := "Internal"
 TW_EXTERNAL_STORAGE_PATH := "/external_sd"
 TW_EXTERNAL_STORAGE_MOUNT_POINT := "External"
-TW_BOARD_CUSTOM_GRAPHICS := ../../../device/pantech/msm8x60-common/recovery/graphics.c
+# TW_BOARD_CUSTOM_GRAPHICS := ../../../device/pantech/msm8x60-common/recovery/graphics.c
 # TARGET_PREBUILT_RECOVERY_KERNEL := device/pantech/presto/prebuilt/recovery/R1
