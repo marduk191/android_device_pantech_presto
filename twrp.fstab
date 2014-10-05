@@ -1,0 +1,14 @@
+#twrp fstab for Pantech Presto.
+#created 10-02-2014 by marduk191
+
+/boot           emmc            /dev/block/mmcblk0p8
+/cache          ext4            /dev/block/mmcblk0p16
+/data           ext4            /dev/block/mmcblk0p14                        length=-16384
+/misc		emmc		/dev/block/platform/msm_sdcc.1/by-num/p17
+/recovery       emmc            /dev/block/mmcblk0p18
+/system         ext4            /dev/block/mmcblk0p13
+/sdcard         vfat            /dev/block/mmcblk0p27 /dev/block/mmcblk0
+/external_sd    vfat            /dev/block/mmcblk1p1 /dev/block/mmcblk1
+
+
+

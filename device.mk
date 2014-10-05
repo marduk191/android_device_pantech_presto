@@ -36,7 +36,7 @@ DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
 # Recovery
 TARGET_RECOVERY_FSTAB = device/pantech/presto/fstab.qcom
-
+PRODUCT_COPY_FILES += device/pantech/presto/twrp.fstab:recovery/root/etc/twrp.fstab
 #----------------------------------------------------------------------
 
 LOCAL_KERNEL := $(LOCAL_PATH)/prebuilt/kernel/kernel
