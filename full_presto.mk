@@ -19,6 +19,12 @@
 # product configuration (apps).
 #
 
+## Specify phone tech before including full_phone
+$(call inherit-product, vendor/du/config/gsm.mk)
+
+# Inherit some common CM stuff.
+$(call inherit-product, vendor/du/config/common.mk)
+
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
@@ -33,3 +39,12 @@ PRODUCT_DEVICE       := presto
 PRODUCT_BRAND        := ATT
 PRODUCT_MANUFACTURER := Pantech
 PRODUCT_MODEL        := PantechP9070
+
+# Release name
+PRODUCT_RELEASE_NAME := presto
+
+# Boot animation
+TARGET_SCREEN_HEIGHT := 800
+TARGET_SCREEN_WIDTH  := 480
+
+PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=PantechP9070 TARGET_DEVICE=PantechP9070 BUILD_FINGERPRINT="ATT/PantechP9070/presto:4.0.4/IMM76I/presto_0903:user/release-keys" PRIVATE_BUILD_DESC="Pantech Presto P9070 release-keys"
